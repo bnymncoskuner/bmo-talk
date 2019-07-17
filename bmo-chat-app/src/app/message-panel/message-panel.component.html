@@ -1,0 +1,7 @@
+<div class="message-panel message-content"
+    #messagePanel [scrollTop]="messagePanel.scrollHeight">
+    <app-message *ngFor="let message of messages$ | async"
+        [message]="message"
+        [self]="message.self">
+    </app-message>
+</div>

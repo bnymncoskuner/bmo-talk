@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { UsersPanelModule } from './users-panel/users-panel.module';
 import { CoreModule } from './core/core.module';
+import { MessagePanelModule } from './message-panel/message-panel.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CoreModule } from './core/core.module';
     MatIconModule,
     MatListModule,
     UsersPanelModule,
-    CoreModule
+    CoreModule,
+    MessagePanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]
