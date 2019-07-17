@@ -1,0 +1,17 @@
+<mat-form-field>
+    <input matInput type="text"
+        [placeholder]="placeholder"
+        [ngModel]="value" 
+        (keyup.enter)="onClick()"
+        (ngModelChange)="updateValue($event)">
+
+    <button *ngIf="icon"
+        mat-button
+        matSuffix
+        mat-icon-button
+        [disabled]="!value"
+        (click)="onClick()">
+        <mat-icon>{{icon}}</mat-icon>
+    </button>
+   
+</mat-form-field>

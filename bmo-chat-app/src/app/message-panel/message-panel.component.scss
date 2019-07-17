@@ -1,0 +1,14 @@
+:host {
+    .message-panel {
+        background-color: #efefef;
+        overflow-y: auto;
+        display: block;
+    }
+
+    app-input {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}

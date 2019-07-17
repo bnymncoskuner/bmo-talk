@@ -9,11 +9,16 @@ import { MessageService } from '../core/services/message.service';
 export class MessagePanelComponent implements OnInit {
 
   messages$;
-  
+  message;
+
   constructor(private messageService: MessageService) { }
 
   ngOnInit() {
     this.messages$ = this.messageService.getMessages();
+  }
+
+  sendMessage() {
+    this.message = '';
   }
 
 }
