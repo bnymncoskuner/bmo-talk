@@ -1,0 +1,31 @@
+{
+    "Layout component html": {
+        "scope": "html",
+        "prefix": "layout-component-html",
+        "body": [
+            "<mat-sidenav-container class=\"sidenav-container\">",
+            "\t<mat-sidenav #drawer class=\"sidenav\" fixedInViewport mode=\"push\">",
+            "\t\t<mat-toolbar>Users</mat-toolbar>",
+            "\t\t<mat-nav-list>",
+            "\t\t\t<a mat-list-item href=\"#\">Link 1</a>",
+            "\t\t\t<a mat-list-item href=\"#\">Link 2</a>",
+            "\t\t\t<a mat-list-item href=\"#\">Link 3</a>",
+            "\t\t</mat-nav-list>",
+            "\t</mat-sidenav>",
+            "\t<mat-sidenav-content class=\"message-content\">",
+            "\t\t<mat-toolbar color=\"primary\">",
+            "\t\t\t<button",
+            "\t\t\t\ttype=\"button\"",
+            "\t\t\t\taria-label=\"Toggle sidenav\"",
+            "\t\t\t\tmat-icon-button",
+            "\t\t\t\t(click)=\"drawer.toggle()\">",
+            "\t\t\t\t<mat-icon aria-label=\"Side nav toggle icon\">menu</mat-icon>",
+            "\t\t\t</button>",
+            "\t\t\t<span>BMO Chat</span>",
+            "\t\t</mat-toolbar>",
+            "\t\t<!-- Add Content Here -->",
+            "\t</mat-sidenav-content>",
+            "</mat-sidenav-container>"
+        ]
+    }
+}

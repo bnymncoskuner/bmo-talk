@@ -1,0 +1,76 @@
+{
+	"Import modules in app-module": {
+		"scope": "typescript",
+		"prefix": "app-module-import-1",
+		"body": [
+			"import { CoreModule } from './core/core.module';",
+			"import { UsersPanelModule } from './users-panel/users-panel.module';",
+			"import { MessagePanelModule } from './message-panel/message-panel.module';",
+		]
+	},
+	"Import material modules in app-module": {
+		"scope": "typescript",
+		"prefix": "app-module-material-import",
+		"body": [
+			"import { MatSidenavModule } from '@angular/material/sidenav';",
+			"import { MatButtonModule, MatToolbarModule, MatIconModule } from '@angular/material';"
+		]
+	},
+	"Use ng-modules in app-module": {
+		"scope": "typescript",
+		"prefix": "app-module-import-2",
+		"body": [
+			"CoreModule,",
+    		"UsersPanelModule,",
+    		"MessagePanelModule",
+		]
+	},
+	"Use material modules in app-module": {
+		"scope": "typescript",
+		"prefix": "app-module-material-use",
+		"body": [
+			"MatSidenavModule,",
+			"MatButtonModule,",
+			"MatToolbarModule,",
+			"MatIconModule"
+		]
+	},
+	"Add minimum width to mat-drawer": {
+		"scope": "scss",
+		"prefix": "app-component-scss",
+		"body": [
+			":host {",
+			"\tdisplay: flex;",
+			"\tflex-direction: column;",
+			"\tposition: absolute;",
+			"\ttop: 0;",
+			"\tbottom: 0;",
+			"\tleft: 0;",
+			"\tright: 0;",
+			"",
+			"\tmat-drawer-container {",
+			"\t\theight: 100%;",
+			"\t}",
+			"",
+			"\t@media(max-width: 600px) {",
+			"\t\t.toolbar {",
+			"\t\t\tposition: fixed;",
+			"\t\t\tz-index: 2;",
+			"\t\t}",
+			"",
+			"\t\tmat-drawer-container {",
+			"\t\t\tmargin-top: 56px;",
+			"\t\t}",
+			"\t}",
+			"",
+			"\th1 {",
+			"\t\tmargin-left: 8px;",
+			"\t}",
+			"",
+			"\tmat-drawer {",
+			"\t\tmin-width: 180px;",
+			"\t}",
+			"}"
+		]
+	}
+}
