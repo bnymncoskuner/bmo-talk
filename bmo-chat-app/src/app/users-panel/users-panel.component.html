@@ -7,7 +7,8 @@
 
         <app-user-info *ngFor="let user of users"
             [name]="user.name"
-            [online]="user.online">
+            [online]="user.online"
+            [self]="user.id === userService.user?.id">
         </app-user-info>
     </ng-container>
 <div>

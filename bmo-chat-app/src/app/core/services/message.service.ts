@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { FirebaseService } from './firebase.service';
+import { UserService } from './user.service';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,7 @@ export class MessageService {
 
   dbName = 'messages';
 
-  constructor(private firebaseService: FirebaseService) { }
+  constructor(private firebaseService: FirebaseService, private userService: UserService) { }
 
   getMessages() {
     return this.firebaseService.list(this.dbName);
@@ -16,7 +17,7 @@ export class MessageService {
   
   sendMessage(message) {
     const newMessage = {
-      sender: 'Bunyamin',
+      sender: this.userService.user,
       text: message,
       date: new Date().toString()
     };

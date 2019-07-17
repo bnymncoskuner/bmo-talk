@@ -15,6 +15,6 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     FormsModule
   ],
-  exports: [InputComponent]
+  exports: [InputComponent, FormsModule]
 })
 export class SharedModule { }
