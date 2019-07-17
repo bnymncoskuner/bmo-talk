@@ -18,6 +18,7 @@ export class MessagePanelComponent implements OnInit {
   }
 
   sendMessage() {
+    this.messageService.sendMessage(this.message);
     this.message = '';
   }
 
